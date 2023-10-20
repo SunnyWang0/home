@@ -9,6 +9,7 @@ const ProjectCard = ({ value }) => {
     name,
     description,
     svn_url,
+    homepage,
     stargazers_count,
     languages_url,
     pushed_at,
@@ -19,7 +20,7 @@ const ProjectCard = ({ value }) => {
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
+          {svn_url ? <CardButtons svn_url={svn_url} homepage={homepage}/> : <Skeleton count={2} />}
           <hr />
           {/* {languages_url ? (
             <Language languages_url={languages_url} repo_url={svn_url} />
@@ -38,20 +39,38 @@ const ProjectCard = ({ value }) => {
   );
 };
 
-const CardButtons = ({ svn_url }) => {
-  return (
-    <div className="d-grid gap-2 d-md-block">
-      {/* <a
-        href={`${svn_url}/archive/master.zip`}
-        className="btn btn-outline-secondary mx-2"
-      >
-        <i className="fab fa-github" /> Clone Project
-      </a> */}
-      <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
-        <i className="fab fa-github" /> Repo
-      </a>
-    </div>
-  );
+const CardButtons = ({ svn_url,homepage }) => {
+  
+  if (homepage == ""){
+    return (
+      <div className="d-grid gap-2 d-md-block">
+        <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
+          <i className="fab fa-github" /> Repo
+        </a>
+      </div>
+    );
+  }
+  else{
+    return (
+      <div className="d-grid gap-2 d-md-block">
+        {/* <a
+          href={`${svn_url}/archive/master.zip`}
+          className="btn btn-outline-secondary mx-2"
+        >
+          <i className="fab fa-github" /> Clone Project
+        </a> */}
+        <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
+          <i className="fab fa-github" /> Repo
+        </a>
+        
+        {/* UNCOMMENT FOR HOMEPAGE LINK */}
+        <a href={homepage} target=" _blank" className="btn btn-outline-secondary mx-2">
+          <i className="fas fa-play-circle" /> Try Me Out! (Coming Soon)
+        </a>
+      </div>
+    );
+  }
+  
 };
 
 const Language = ({ languages_url, repo_url }) => {

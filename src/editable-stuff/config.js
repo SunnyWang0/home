@@ -118,14 +118,14 @@ const skills = {
     { name: "Scikit-learn", value: 70 },
   ],
   softSkills: [
-    { name: "Collaboration", value: 80 },
+    { name: "Collaboration", value: 85 },
     { name: "Creativity", value: 90 },
-    { name: "Positivity", value: 75 },
+    { name: "Grit", value: 87 },
     { name: "Problem Solving", value: 90 },
-    { name: "Adaptability", value: 85 },
+    { name: "Adaptability", value: 87 },
     { name: "Hard Working", value: 90 },
-    { name: "Organization", value: 75 },
-    { name: "Empathy", value: 80 },
+    { name: "Organization", value: 85 },
+    { name: "Curiosity", value: 90 },
   ],
 };
 
