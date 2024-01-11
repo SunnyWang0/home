@@ -76,7 +76,7 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "SunnyWang0", //i.e."johnDoe12Gh"
   reposLength: 0,
-  specificRepos: ["TuneBot", "FAQ-Chatbot"],
+  specificRepos: ["GenreClassification", "TuneBot", "FAQ-Chatbot"],
 };
 
 // Leadership SECTION
@@ -160,4 +160,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences};
