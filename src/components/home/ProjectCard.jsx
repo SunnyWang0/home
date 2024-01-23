@@ -52,11 +52,12 @@ const CardButtons = ({ svn_url,homepage }) => {
           </a> */}
           <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
             <i className="fab fa-github" /> Repo
+            {/* fab fa-github */}
           </a>
           
           {/* UNCOMMENT FOR HOMEPAGE LINK */}
           <a href={require("../../editable-stuff/paper442.pdf")} target=" _blank" className="btn btn-outline-secondary mx-2">
-            <i className="fas fa-play-circle" /> Paper
+            <i className="fas fa-file-alt" /> Paper
           </a>
         </div>
       );
