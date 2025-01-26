@@ -127,7 +127,7 @@ const getInTouch = {
   heading: "Get In Touch",
   message:
     "I'm currently looking for full-time Machine Learning / AI opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "sunnywng@umich.edu",
+  email: "sunny.wang002@gmail.com",
 };
 
 const experiences = {
