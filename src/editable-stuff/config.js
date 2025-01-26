@@ -57,9 +57,11 @@ const about = {
     My name is Sunny Wang, and I’m a recent graduate from the University of Michigan with a dual 
     degree in computer science and music. I’m hardworking, creative, and resilient, viewing every 
     challenge as an opportunity to learn and improve. 
+
+    <br /><br />
     
-    I run an AI automation consulting agency focused on helping growing businesses leverage AI to 
-    automate manual tasks and improve efficiency.I enjoy building side projects at the intersection 
+    I founded UnleashAI, an AI automation consulting agency focused on helping growing businesses leverage AI to 
+    elminiate tedious manual tasks and improve efficiency. I also enjoy tinkering with side projects in the intersection 
     of AI and fitness to create meaningful solutions.
     
     <br /><br />
