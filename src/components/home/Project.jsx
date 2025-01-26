@@ -18,41 +18,49 @@ const API = "https://api.github.com";
 // const specficQuerry = "https://api.github.com/repos/hashirshoaeb/";
 
 const Project = ({ heading, username, length, specfic }) => {
-  const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
-  const specficReposAPI = `${API}/repos/${username}`;
-  const dummyProjectsArr = new Array(length + specfic.length).fill(
-    dummyProject
-  );
-
   const [projectsArray, setProjectsArray] = useState([]);
+  const [projectsLength] = useState(length);
 
-  const fetchRepos = useCallback(async () => {
-    let repoList = [];
+  const fetchData = useCallback(async () => {
+    const repoList = [];
     try {
       // getting all repos
-      const response = await axios.get(allReposAPI);
+      const response = await axios.get(
+        `${API}/users/${username}/repos?sort=updated&direction=desc`
+      );
       // slicing to the length
-      repoList = [...response.data.slice(0, length)];
+      const repos = [...response.data];
+      const specificRepos = [];
+      
       // adding specified repos
-      try {
-        for (let repoName of specfic) {
-          const response = await axios.get(`${specficReposAPI}/${repoName}`);
-          repoList.push(response.data);
+      for (let repoName of specfic) {
+        try {
+          const response = await axios.get(`${API}/repos/${username}/${repoName}`);
+          specificRepos.push(response.data);
+        } catch (error) {
+          console.error(error.message);
         }
-      } catch (error) {
-        console.error(error.message);
       }
-      // setting projectArray
-      // TODO: remove the duplication.
-      setProjectsArray(repoList);
+      
+      // adding filtered repos
+      for (let repo of repos) {
+        if (repoList.length < projectsLength - specfic.length) {
+          if (!specfic.includes(repo.name)) {
+            repoList.push(repo);
+          }
+        }
+      }
+      
+      // adding to project array
+      setProjectsArray([...specificRepos, ...repoList]);
     } catch (error) {
       console.error(error.message);
     }
-  }, [allReposAPI, length, specfic, specficReposAPI]);
+  }, [projectsLength, specfic, username]);
 
   useEffect(() => {
-    fetchRepos();
-  }, [fetchRepos]);
+    fetchData();
+  }, [fetchData]);
 
   return (
     <Jumbotron fluid id="projects" className="bg-light m-0">
@@ -61,25 +69,17 @@ const Project = ({ heading, username, length, specfic }) => {
         <Row>
           {projectsArray.length
             ? projectsArray.map((project, index) => (
-              <ProjectCard
-                key={`project-card-${index}`}
-                id={`project-card-${index}`}
-                value={project}
-              />
-            ))
-            : dummyProjectsArr.map((project, index) => (
-              <ProjectCard
-                key={`dummy-${index}`}
-                id={`dummy-${index}`}
-                value={project}
-              />
-            ))}
+                <ProjectCard
+                  key={`project-card-${index}`}
+                  id={`project-card-${index}`}
+                  value={project}
+                />
+              ))
+            : null}
         </Row>
       </Container>
     </Jumbotron>
   );
 };
-
-
 
 export default Project;

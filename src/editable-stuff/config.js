@@ -39,6 +39,10 @@ const mainBody = {
       image: "fa-spotify",
       url: "https://open.spotify.com/user/sunny.wang999?si=a353ef8182644a79",
     },
+    {
+      image: "fa-brands fa-x-twitter",
+      url: "https://x.com/SunnyWangAI",
+    },
   ],
 };
 
@@ -62,7 +66,7 @@ const about = {
   imageLink: require("../editable-stuff/portrait.png"),
   imageSize: 375,
   message:
-    "My name is Sunny Wang. I’m a currently a senior at the University of Michigan pursuing a dual degree in computer science and music. My passion lies at the intersection of these two fields. I'm a creative and hardworking individual who relishes the art of making music and the science of crafting AI solutions, always eager to innovate in both arenas.",
+    "My name is Sunny Wang. I'm a currently a senior at the University of Michigan pursuing a dual degree in computer science and music. My passion lies at the intersection of these two fields. I'm a creative and hardworking individual who relishes the art of making music and the science of crafting AI solutions, always eager to innovate in both arenas.",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
