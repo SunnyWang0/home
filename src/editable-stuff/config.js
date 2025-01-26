@@ -1,15 +1,3 @@
-/*
-After editing run the following bash commands:
-   npm install
-   npm start
-
-To deploy website, run:
-    npm run build
-    npm run deploy
-*/
-
-
-
 // Navigation Bar SECTION
 const navBar = {
   show: true,
