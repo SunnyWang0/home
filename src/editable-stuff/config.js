@@ -32,16 +32,16 @@ const mainBody = {
       url: "https://www.instagram.com/sunnyyy.wanggg/",
     },
     {
+      image: "fa-brands fa-x-twitter",
+      url: "https://x.com/SunnyWangAI",
+    },
+    {
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/sunnywang002/",
     },
     {
       image: "fa-spotify",
       url: "https://open.spotify.com/user/sunny.wang999?si=a353ef8182644a79",
-    },
-    {
-      image: "fa-brands fa-x-twitter",
-      url: "https://x.com/SunnyWangAI",
     },
   ],
 };
