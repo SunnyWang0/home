@@ -102,7 +102,7 @@ const skills = {
   hardSkills: [
     { name: "C/C++", value: 90 },
     { name: "Data Structures", value: 85 },
-    { name: "AWS", value: 65 },
+    { name: "AWS", value: 90 },
     { name: "NumPy", value: 75 },
     { name: "Python", value: 90 },
     { name: "Tensorflow", value: 75 },
