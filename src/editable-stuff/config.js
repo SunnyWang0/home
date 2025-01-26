@@ -54,12 +54,15 @@ const about = {
   imageLink: require("../editable-stuff/portrait.png"),
   imageSize: 375,
   message: `
-    My name is Sunny Wang, and I'm a recent graduate from the University of Michigan 
-    with a dual degree in computer science and music. I pride myself on being hardworking, 
-    creative, and resilient, approaching every challenge as an opportunity to test myself, 
-    learn, and improve. I have an entrepreneurial mindset and enjoy working on side projects, 
-    particularly at the intersection of AI and fitness, where I aim to develop innovative 
-    tools that are both useful and fun.<br /><br />
+    My name is Sunny Wang, and I’m a recent graduate from the University of Michigan with a dual 
+    degree in computer science and music. I’m hardworking, creative, and resilient, viewing every 
+    challenge as an opportunity to learn and improve. 
+    
+    I run an AI automation consulting agency focused on helping growing businesses leverage AI to 
+    automate manual tasks and improve efficiency.I enjoy building side projects at the intersection 
+    of AI and fitness to create meaningful solutions.
+    
+    <br /><br />
     
     With a commitment to continuous growth, my goal is to gain hands-on experience and learn 
     from industry leaders who are driving innovation. I'm eager to hone my skills, contribute 
