@@ -61,7 +61,7 @@ const about = {
     <br /><br />
     
     I founded UnleashAI, an AI automation consulting agency focused on helping growing businesses leverage AI to 
-    elminiate tedious manual tasks and improve efficiency. I also enjoy tinkering with side projects in the intersection 
+    eliminiate tedious manual tasks and improve efficiency. I also enjoy tinkering with side projects in the intersection 
     of AI and fitness to create meaningful solutions.
     
     <br /><br />
