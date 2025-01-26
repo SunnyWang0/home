@@ -54,7 +54,7 @@ const about = {
   imageLink: require("../editable-stuff/portrait.png"),
   imageSize: 375,
   message:
-    "My name is Sunny Wang, and I'm a recent graduate from the University of Michigan with a dual degree in computer science and music. I pride myself on being hardworking, creative, and resilient, approaching every challenge as an opportunity to test myself, learn, and improve. I have an entrepreneurial mindset and enjoy working on side projects, particularly at the intersection of AI and fitness, where I aim to develop innovative tools that are both useful and fun.\n\nWith a commitment to continuous growth, my goal is to gain hands-on experience and learn from industry leaders who are driving innovation. I'm eager to hone my skills, contribute to meaningful projects, and play a part in shaping the future of AI-driven technologies.",
+    "My name is Sunny Wang, and I'm a recent graduate from the University of Michigan with a dual degree in computer science and music. I pride myself on being hardworking, creative, and resilient, approaching every challenge as an opportunity to test myself, learn, and improve. I have an entrepreneurial mindset and enjoy working on side projects, particularly at the intersection of AI and fitness, where I aim to develop innovative tools that are both useful and fun.<br /><br />With a commitment to continuous growth, my goal is to gain hands-on experience and learn from industry leaders who are driving innovation. I'm eager to hone my skills, contribute to meaningful projects, and play a part in shaping the future of AI-driven technologies.",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
