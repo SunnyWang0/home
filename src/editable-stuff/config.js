@@ -69,6 +69,7 @@ const about = {
     With a commitment to continuous growth, my goal is to gain hands-on experience and learn 
     from industry leaders who are driving innovation. I'm eager to hone my skills, contribute 
     to meaningful projects, and play a part in shaping the future of AI-driven technologies.
+    <br /><br />
   `,
   resume: require("../editable-stuff/resume.pdf"),
 };
