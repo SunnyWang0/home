@@ -101,7 +101,12 @@ const repos = {
     },
     {
       name: "TuneBot",
-      description: "Song lyric generation",
+      description: `
+      A GPT-2-based AI for generating song lyrics tailored to genre, artist, and subject inputs. 
+      Tunebot enhances lyric authenticity by incorporating song structures and rhyming schemes. 
+      It also features a custom Named Entity Recognition system, enabling accurate interpretation 
+      of natural language user inputs.
+      `,
       svn_url: "https://github.com/mumichians/TuneBot-WebApp",
       homepage: ""
     }
