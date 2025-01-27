@@ -87,6 +87,27 @@ const repos = {
   specificRepos: [],
   customProjects: [
     {
+      name: "SnapFit: AI Body Fat Analyzer",
+      description: `
+        An AI-powered body fat analysis tool that provides accurate body fat percentage estimates from photos.
+        Using advanced computer vision and machine learning models, SnapFit helps users track their fitness 
+        progress by analyzing body composition through simple photo uploads. The tool provides detailed 
+        breakdowns of body measurements and composition metrics to help users track their fitness journey.
+      `,
+      homepage: ""
+    },
+    {
+      name: "FitLens: AI Supplement Analyzer",
+      description: `
+        A revolutionary supplement analysis tool that decodes supplement labels through photos.
+        Simply snap a picture of any pre-workout or supplement label, and FitLens breaks down 
+        the ingredients in plain English. The app provides easy-to-understand effectiveness scores 
+        for strength, focus, endurance, and other key metrics, making it simple to compare different 
+        products and make informed decisions about your supplements.
+      `,
+      homepage: ""
+    },
+    {
       name: "Sweat AI: Supplement Shopping Assistant",
       description: `
         An AI-powered research-based supplement shopping assistant.
