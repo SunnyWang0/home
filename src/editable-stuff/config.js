@@ -87,23 +87,29 @@ const repos = {
   specificRepos: [],
   customProjects: [
     {
-      name: "Sweat AI",
+      name: "Sweat AI: Supplement Shopping Assistant",
       description: `
-      A research-based AI shopping assistant for supplements. Leveraging natural language 
-      processing and a comprehensive supplement database, this tool helps users make informed 
-      decisions about their supplement purchases by providing personalized, research-backed 
-      recommendations.
+        An AI-powered research-based supplement shopping assistant.
+        Leveraging natural language processing and GPT-4o, this tool helps 
+        users make informed decisions about their supplement purchases 
+        by providing personalized, research-backed recommendations. Recommendations
+        are pulled from all available supplement stores with a link to the product.
       `,
       homepage: "https://www.sweat.chat"
     },
     {
-      name: "GenreClassification",
-      description: "A music genre classification model that innovates by leveraging Convolutional Neural Networks. The method uniquely combines Melspectrograms and Short-Time Fourier Transform spectrograms as joint data inputs. This approach successfuly improved classification accuracy in music genre identification.",
+      name: "AI Music Genre Classification Research",
+      description: `
+        A music genre classification model that innovates by leveraging Convolutional Neural Networks. 
+        The method uniquely combines Melspectrograms and Short-Time Fourier Transform spectrograms as 
+        joint inputs to augment training data. This approach successfuly improved classification accuracy 
+        in music genre identification by 7%.
+      `,
       svn_url: "https://github.com/SunnyWang0/GenreClassification",
       paper_url: require("../editable-stuff/paper442.pdf")
     },
     {
-      name: "TuneBot",
+      name: "TuneBot: AI Song Lyrics Generator",
       description: `
       A GPT-2-based AI for generating song lyrics tailored to genre, artist, and subject inputs. 
       Tunebot enhances lyric authenticity by incorporating song structures and rhyming schemes. 
@@ -113,7 +119,7 @@ const repos = {
       svn_url: "https://github.com/mumichians/TuneBot-WebApp",
     },
     {
-      name: "FAQ-Chatbot",
+      name: "Tesla FAQ Chatbot",
       description: "An NLP-driven chatbot tailored for answering FAQ's related to Tesla, mapping user queries to an FAQ database.",
       svn_url: "https://github.com/SunnyWang0/FAQ-Chatbot",
     }
