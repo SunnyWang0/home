@@ -24,7 +24,6 @@ const ProjectCard = ({ value }) => {
             )}
           </Card.Text>
           <CardButtons svn_url={svn_url} homepage={homepage} paper_url={paper_url}/>
-          <hr />
           {/* {languages_url ? (
             <Language languages_url={languages_url} repo_url={svn_url} />
           ) : (
