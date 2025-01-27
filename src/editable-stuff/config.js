@@ -94,7 +94,7 @@ const repos = {
         progress by analyzing body composition through simple photo uploads. The tool provides detailed 
         breakdowns of body measurements and composition metrics to help users track their fitness journey.
       `,
-      homepage: ""
+      svn_url: "https://github.com/SunnyWang0/SnapFit"
     },
     {
       name: "FitLens: AI Supplement Analyzer",
@@ -105,7 +105,7 @@ const repos = {
         for strength, focus, endurance, and other key metrics, making it simple to compare different 
         products and make informed decisions about your supplements.
       `,
-      homepage: ""
+      svn_url: "https://github.com/SunnyWang0/FitLens"
     },
     {
       name: "Sweat AI: Supplement Shopping Assistant",
