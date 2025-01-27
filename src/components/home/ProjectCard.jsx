@@ -10,17 +10,16 @@ const ProjectCard = ({ value }) => {
     description,
     svn_url,
     homepage,
-    stargazers_count,
-    languages_url,
-    pushed_at,
+    paper_url
   } = value;
+  
   return (
     <Col md={6}>
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} homepage={homepage}/> : <Skeleton count={2} />}
+          {svn_url ? <CardButtons svn_url={svn_url} homepage={homepage} paper_url={paper_url}/> : <Skeleton count={2} />}
           <hr />
           {/* {languages_url ? (
             <Language languages_url={languages_url} repo_url={svn_url} />
@@ -39,58 +38,35 @@ const ProjectCard = ({ value }) => {
   );
 };
 
-const CardButtons = ({ svn_url,homepage }) => {
+const CardButtons = ({ svn_url, homepage, paper_url }) => {
+  const buttons = [];
   
-  if (svn_url == "https://github.com/SunnyWang0/GenreClassification"){
-      return (
-        <div className="d-grid gap-2 d-md-block">
-          {/* <a
-            href={`${svn_url}/archive/master.zip`}
-            className="btn btn-outline-secondary mx-2"
-          >
-            <i className="fab fa-github" /> Clone Project
-          </a> */}
-          <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
-            <i className="fab fa-github" /> Repo
-            {/* fab fa-github */}
-          </a>
-          
-          {/* UNCOMMENT FOR HOMEPAGE LINK */}
-          <a href={require("../../editable-stuff/paper442.pdf")} target=" _blank" className="btn btn-outline-secondary mx-2">
-            <i className="fas fa-file-alt" /> Paper
-          </a>
-        </div>
-      );
-    }
-  else if (homepage == ""){
-    return (
-      <div className="d-grid gap-2 d-md-block">
-        <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
-          <i className="fab fa-github" /> Repo
-        </a>
-      </div>
+  // Add Repo button
+  buttons.push(
+    <a key="repo" href={svn_url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-secondary mx-2">
+      <i className="fab fa-github" /> Repo
+    </a>
+  );
+  
+  // Add Paper button if paper_url exists
+  if (paper_url) {
+    buttons.push(
+      <a key="paper" href={paper_url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-secondary mx-2">
+        <i className="fas fa-file-alt" /> Paper
+      </a>
     );
   }
-  else{
-    return (
-      <div className="d-grid gap-2 d-md-block">
-        {/* <a
-          href={`${svn_url}/archive/master.zip`}
-          className="btn btn-outline-secondary mx-2"
-        >
-          <i className="fab fa-github" /> Clone Project
-        </a> */}
-        <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
-          <i className="fab fa-github" /> Repo
-        </a>
-        
-        {/* UNCOMMENT FOR HOMEPAGE LINK */}
-        <a href={homepage} target=" _blank" className="btn btn-outline-secondary mx-2">
-          <i className="fas fa-play-circle" /> Try Me Out! (Coming Soon)
-        </a>
-      </div>
+  
+  // Add Homepage button if homepage exists and is not empty
+  if (homepage) {
+    buttons.push(
+      <a key="homepage" href={homepage} target="_blank" rel="noopener noreferrer" className="btn btn-outline-secondary mx-2">
+        <i className="fas fa-play-circle" /> Try Me Out!
+      </a>
     );
   }
+  
+  return <div className="d-grid gap-2 d-md-block">{buttons}</div>;
 };
 
 const Language = ({ languages_url, repo_url }) => {

@@ -54,8 +54,8 @@ const about = {
   imageLink: require("../editable-stuff/portrait.png"),
   imageSize: 375,
   message: `
-    My name is Sunny Wang, and I’m a recent graduate from the University of Michigan with a dual 
-    degree in computer science and music. I’m hardworking, creative, and resilient, viewing every 
+    My name is Sunny Wang, and I'm a recent graduate from the University of Michigan with a dual 
+    degree in computer science and music. I'm hardworking, creative, and resilient, viewing every 
     challenge as an opportunity to learn and improve. 
 
     <br /><br />
@@ -82,9 +82,30 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "SunnyWang0", //i.e."johnDoe12Gh"
+  gitHubUsername: "SunnyWang0",
   reposLength: 0,
-  specificRepos: ["GenreClassification", "TuneBot", "FAQ-Chatbot"],
+  specificRepos: [],
+  customProjects: [
+    {
+      name: "GenreClassification",
+      description: "A music genre classification model that innovates by leveraging Convolutional Neural Networks. The method uniquely combines Melspectrograms and Short-Time Fourier Transform spectrograms as joint data inputs. This approach successfuly improved classification accuracy in music genre identification.",
+      svn_url: "https://github.com/SunnyWang0/GenreClassification",
+      homepage: "",
+      paper_url: require("../editable-stuff/paper442.pdf")
+    },
+    {
+      name: "FAQ-Chatbot",
+      description: "One of my first NLP projects ever. An NLP-driven chatbot tailored for answering FAQ's related to Tesla, mapping user queries to an FAQ database.",
+      svn_url: "https://github.com/SunnyWang0/FAQ-Chatbot",
+      homepage: ""
+    },
+    {
+      name: "TuneBot",
+      description: "Song lyric generation",
+      svn_url: "https://github.com/mumichians/TuneBot-WebApp",
+      homepage: ""
+    }
+  ]
 };
 
 // Leadership SECTION

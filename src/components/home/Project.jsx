@@ -17,65 +17,47 @@ const API = "https://api.github.com";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
 // const specficQuerry = "https://api.github.com/repos/hashirshoaeb/";
 
-const Project = ({ heading, username, length, specfic }) => {
+const Project = ({ heading, username, length, specfic, customProjects }) => {
   const [projectsArray, setProjectsArray] = useState([]);
-  const [projectsLength] = useState(length);
 
-  const fetchData = useCallback(async () => {
-    const repoList = [];
+  const handleRequest = useCallback(async () => {
     try {
-      // getting all repos
-      const response = await axios.get(
-        `${API}/users/${username}/repos?sort=updated&direction=desc`
-      );
-      // slicing to the length
-      const repos = [...response.data];
-      const specificRepos = [];
-      
-      // adding specified repos
-      for (let repoName of specfic) {
-        try {
-          const response = await axios.get(`${API}/repos/${username}/${repoName}`);
-          specificRepos.push(response.data);
-        } catch (error) {
-          console.error(error.message);
-        }
+      if (specfic.length > 0) {
+        // Fetch specific repos
+        const promises = specfic.map((repo) =>
+          axios.get(`https://api.github.com/repos/${username}/${repo}`)
+        );
+        const responses = await Promise.all(promises);
+        return setProjectsArray(responses.map((response) => response.data));
       }
       
-      // adding filtered repos
-      for (let repo of repos) {
-        if (repoList.length < projectsLength - specfic.length) {
-          if (!specfic.includes(repo.name)) {
-            repoList.push(repo);
-          }
-        }
+      if (length > 0) {
+        // Fetch latest repos
+        const response = await axios.get(
+          `https://api.github.com/users/${username}/repos?sort=updated&direction=desc`
+        );
+        return setProjectsArray(response.data.slice(0, length));
       }
-      
-      // adding to project array
-      setProjectsArray([...specificRepos, ...repoList]);
     } catch (error) {
       console.error(error.message);
     }
-  }, [projectsLength, specfic, username]);
+  }, [length, specfic, username]);
 
   useEffect(() => {
-    fetchData();
-  }, [fetchData]);
+    handleRequest();
+  }, [handleRequest]);
 
   return (
     <Jumbotron fluid id="projects" className="bg-light m-0">
       <Container className="">
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
         <Row>
-          {projectsArray.length
-            ? projectsArray.map((project, index) => (
-                <ProjectCard
-                  key={`project-card-${index}`}
-                  id={`project-card-${index}`}
-                  value={project}
-                />
-              ))
-            : null}
+          {customProjects && customProjects.map((project, index) => (
+            <ProjectCard key={`custom-project-${index}`} value={project} />
+          ))}
+          {projectsArray && projectsArray.map((project, index) => (
+            <ProjectCard key={`github-project-${index}`} value={project} />
+          ))}
         </Row>
       </Container>
     </Jumbotron>
