@@ -87,6 +87,17 @@ const repos = {
   specificRepos: [],
   customProjects: [
     {
+      name: "Sweat AI",
+      description: `
+      A research-based AI shopping assistant for supplements. Leveraging natural language 
+      processing and a comprehensive supplement database, this tool helps users make informed 
+      decisions about their supplement purchases by providing personalized, research-backed 
+      recommendations.
+      `,
+      svn_url: "",
+      homepage: "https://www.sweat.chat"
+    },
+    {
       name: "GenreClassification",
       description: "A music genre classification model that innovates by leveraging Convolutional Neural Networks. The method uniquely combines Melspectrograms and Short-Time Fourier Transform spectrograms as joint data inputs. This approach successfuly improved classification accuracy in music genre identification.",
       svn_url: "https://github.com/SunnyWang0/GenreClassification",
