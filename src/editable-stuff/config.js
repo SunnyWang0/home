@@ -114,7 +114,7 @@ const repos = {
     },
     {
       name: "FAQ-Chatbot",
-      description: "One of my first NLP projects ever. An NLP-driven chatbot tailored for answering FAQ's related to Tesla, mapping user queries to an FAQ database.",
+      description: "An NLP-driven chatbot tailored for answering FAQ's related to Tesla, mapping user queries to an FAQ database.",
       svn_url: "https://github.com/SunnyWang0/FAQ-Chatbot",
     }
   ]
