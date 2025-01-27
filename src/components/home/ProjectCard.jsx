@@ -41,12 +41,14 @@ const ProjectCard = ({ value }) => {
 const CardButtons = ({ svn_url, homepage, paper_url }) => {
   const buttons = [];
   
-  // Add Repo button
-  buttons.push(
-    <a key="repo" href={svn_url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-secondary mx-2">
-      <i className="fab fa-github" /> Repo
-    </a>
-  );
+  // Add Repo button if svn_url exists and is not empty
+  if (svn_url) {
+    buttons.push(
+      <a key="repo" href={svn_url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-secondary mx-2">
+        <i className="fab fa-github" /> Repo
+      </a>
+    );
+  }
   
   // Add Paper button if paper_url exists
   if (paper_url) {
@@ -58,7 +60,7 @@ const CardButtons = ({ svn_url, homepage, paper_url }) => {
   }
   
   // Add Homepage button if homepage exists and is not empty
-  if (homepage) {
+  if (homepage !== undefined && homepage !== null) {
     buttons.push(
       <a key="homepage" href={homepage} target="_blank" rel="noopener noreferrer" className="btn btn-outline-secondary mx-2">
         <i className="fas fa-play-circle" /> Try Me Out!

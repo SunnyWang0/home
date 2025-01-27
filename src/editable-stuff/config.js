@@ -94,21 +94,18 @@ const repos = {
       decisions about their supplement purchases by providing personalized, research-backed 
       recommendations.
       `,
-      svn_url: "",
       homepage: "https://www.sweat.chat"
     },
     {
       name: "GenreClassification",
       description: "A music genre classification model that innovates by leveraging Convolutional Neural Networks. The method uniquely combines Melspectrograms and Short-Time Fourier Transform spectrograms as joint data inputs. This approach successfuly improved classification accuracy in music genre identification.",
       svn_url: "https://github.com/SunnyWang0/GenreClassification",
-      homepage: "",
       paper_url: require("../editable-stuff/paper442.pdf")
     },
     {
       name: "FAQ-Chatbot",
       description: "One of my first NLP projects ever. An NLP-driven chatbot tailored for answering FAQ's related to Tesla, mapping user queries to an FAQ database.",
       svn_url: "https://github.com/SunnyWang0/FAQ-Chatbot",
-      homepage: ""
     },
     {
       name: "TuneBot",
@@ -119,7 +116,6 @@ const repos = {
       of natural language user inputs.
       `,
       svn_url: "https://github.com/mumichians/TuneBot-WebApp",
-      homepage: ""
     }
   ]
 };
