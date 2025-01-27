@@ -23,7 +23,9 @@ const ProjectCard = ({ value }) => {
               <div dangerouslySetInnerHTML={{ __html: description }} />
             )}
           </Card.Text>
-          <CardButtons svn_url={svn_url} homepage={homepage} paper_url={paper_url}/>
+          <div className="text-center">
+            <CardButtons svn_url={svn_url} homepage={homepage} paper_url={paper_url}/>
+          </div>
           {/* {languages_url ? (
             <Language languages_url={languages_url} repo_url={svn_url} />
           ) : (
@@ -71,7 +73,7 @@ const CardButtons = ({ svn_url, homepage, paper_url }) => {
     );
   }
   
-  return <div className="d-grid gap-2 d-md-block">{buttons}</div>;
+  return <div className="d-inline-block">{buttons}</div>;
 };
 
 const Language = ({ languages_url, repo_url }) => {
