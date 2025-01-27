@@ -103,11 +103,6 @@ const repos = {
       paper_url: require("../editable-stuff/paper442.pdf")
     },
     {
-      name: "FAQ-Chatbot",
-      description: "One of my first NLP projects ever. An NLP-driven chatbot tailored for answering FAQ's related to Tesla, mapping user queries to an FAQ database.",
-      svn_url: "https://github.com/SunnyWang0/FAQ-Chatbot",
-    },
-    {
       name: "TuneBot",
       description: `
       A GPT-2-based AI for generating song lyrics tailored to genre, artist, and subject inputs. 
@@ -116,6 +111,11 @@ const repos = {
       of natural language user inputs.
       `,
       svn_url: "https://github.com/mumichians/TuneBot-WebApp",
+    },
+    {
+      name: "FAQ-Chatbot",
+      description: "One of my first NLP projects ever. An NLP-driven chatbot tailored for answering FAQ's related to Tesla, mapping user queries to an FAQ database.",
+      svn_url: "https://github.com/SunnyWang0/FAQ-Chatbot",
     }
   ]
 };
