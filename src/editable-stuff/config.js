@@ -60,7 +60,7 @@ const about = {
 
     <br /><br />
     
-    I founded UnleashAI, an AI automation consulting agency focused on helping growing businesses leverage AI to 
+    I founded <a href="https://unleashai.site/" target="_blank" rel="noopener noreferrer">UnleashAI</a>, an AI automation consulting agency focused on helping growing businesses leverage AI to 
     eliminiate tedious manual tasks and improve efficiency. I also enjoy tinkering with side projects in the intersection 
     of AI and fitness to create meaningful solutions.
     
