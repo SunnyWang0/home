@@ -114,7 +114,8 @@ const repos = {
         by providing personalized, research-backed recommendations. Recommendations
         are pulled from all available supplement stores with a link to the product.
       `,
-      homepage: "https://www.sweat.chat"
+      homepage: "https://www.sweat.chat",
+      svn_url: "https://github.com/SunnyWang0/SweatAI"
     },
     {
       name: "AI Music Genre Classification Research",
