@@ -101,8 +101,7 @@ const repos = {
         A supplement analysis tool that decodes supplement labels through photos.
         Simply snap a picture of any pre-workout or supplement label, and FitLens breaks down 
         the ingredients and effects in plain English and graphics. The app provides easy-to-understand effectiveness scores 
-        making it simple to compare different 
-        products and make informed decisions about your supplements.
+        making it simple to compare different products and make informed decisions about your supplements.
       `,
       svn_url: "https://github.com/SunnyWang0/FitLens"
     },
