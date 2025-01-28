@@ -133,6 +133,8 @@ code {
 
 .project-carousel {
   padding: 0 40px;
+  max-width: 1400px;
+  margin: 0 auto;
   
   .carousel-control-prev,
   .carousel-control-next {
@@ -161,11 +163,15 @@ code {
 
   .row {
     margin: 0;
+    justify-content: center;
+    width: 100%;
   }
 
   .col-md-6 {
     padding: 15px;
     display: flex;
+    max-width: 600px;
+    min-width: 500px;
     
     .card {
       width: 100%;
@@ -175,11 +181,28 @@ code {
         display: flex;
         flex-direction: column;
         height: 100%;
+        padding: 2rem;
         
         .card-text {
           flex-grow: 1;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-carousel {
+    .col-md-6 {
+      min-width: 400px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .project-carousel {
+    .col-md-6 {
+      min-width: 300px;
     }
   }
 }
