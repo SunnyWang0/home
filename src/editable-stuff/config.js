@@ -98,10 +98,10 @@ const repos = {
     {
       name: "FitLens: AI Supplement Analyzer",
       description: `
-        A revolutionary supplement analysis tool that decodes supplement labels through photos.
+        A supplement analysis tool that decodes supplement labels through photos.
         Simply snap a picture of any pre-workout or supplement label, and FitLens breaks down 
-        the ingredients in plain English. The app provides easy-to-understand effectiveness scores 
-        for strength, focus, endurance, and other key metrics, making it simple to compare different 
+        the ingredients and effects in plain English and graphics. The app provides easy-to-understand effectiveness scores 
+        making it simple to compare different 
         products and make informed decisions about your supplements.
       `,
       svn_url: "https://github.com/SunnyWang0/FitLens"
