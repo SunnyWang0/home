@@ -144,7 +144,7 @@ code {
     opacity: 0.8;
     border-radius: 4px;
     height: 40px;
-    top: 50%;
+    top: calc(50% - 30px);
     transform: translateY(-50%);
     position: absolute;
     
