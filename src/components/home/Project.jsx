@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Container from "react-bootstrap/Container";
 import { Jumbotron } from "./migration";
+import Carousel from "react-bootstrap/Carousel";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import ProjectCard from "./ProjectCard";
 import axios from "axios";
 
@@ -47,18 +49,40 @@ const Project = ({ heading, username, length, specfic, customProjects }) => {
     handleRequest();
   }, [handleRequest]);
 
+  // Function to chunk array into groups of 2
+  const chunkArray = (arr, size) => {
+    return Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
+      arr.slice(i * size, i * size + size)
+    );
+  };
+
+  // Combine custom projects and GitHub projects
+  const allProjects = [...(customProjects || []), ...(projectsArray || [])];
+  // Split projects into pairs for the carousel
+  const projectPairs = chunkArray(allProjects, 2);
+
   return (
     <Jumbotron fluid id="projects" className="bg-light m-0">
-      <Container className="">
+      <Container>
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
-        <Row>
-          {customProjects && customProjects.map((project, index) => (
-            <ProjectCard key={`custom-project-${index}`} value={project} />
+        <Carousel
+          interval={null}
+          indicators={true}
+          controls={true}
+          className="project-carousel"
+        >
+          {projectPairs.map((pair, index) => (
+            <Carousel.Item key={`slide-${index}`}>
+              <Row>
+                {pair.map((project, projectIndex) => (
+                  <Col md={6} key={`project-${index}-${projectIndex}`}>
+                    <ProjectCard value={project} />
+                  </Col>
+                ))}
+              </Row>
+            </Carousel.Item>
           ))}
-          {projectsArray && projectsArray.map((project, index) => (
-            <ProjectCard key={`github-project-${index}`} value={project} />
-          ))}
-        </Row>
+        </Carousel>
       </Container>
     </Jumbotron>
   );

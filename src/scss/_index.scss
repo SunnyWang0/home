@@ -129,3 +129,20 @@ code {
     animation: progress 1.5s ease-in-out forwards;
   }
 }
+
+.project-carousel {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    filter: invert(100%);
+  }
+
+  .carousel-indicators {
+    filter: invert(100%);
+    bottom: -50px;
+  }
+
+  .carousel-inner {
+    padding-bottom: 60px;
+  }
+}
