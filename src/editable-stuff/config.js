@@ -90,7 +90,8 @@ const repos = {
       name: "SnapFit: AI Body Fat Analyzer",
       description: `
         An AI-powered body fat analysis tool that provides accurate body fat percentage estimates from photos.
-        helping users track their fitness progress. Users can track .
+        SnapsFit helps users track their fitness progress through a combination of body fat and weight 
+        analysis, all bundled in a clean and easy-to-use UI.
       `,
       svn_url: "https://github.com/SunnyWang0/SnapFit"
     },
