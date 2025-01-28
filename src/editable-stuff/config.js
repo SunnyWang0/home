@@ -90,7 +90,7 @@ const repos = {
       name: "SnapFit: AI Body Fat Analyzer",
       description: `
         An AI-powered body fat analysis tool that provides accurate body fat percentage estimates from photos.
-        Using advanced computer vision and machine learning models, SnapFit helps users track their fitness 
+        SnapFit helps users track their fitness 
         progress by analyzing body composition through simple photo uploads. The tool provides detailed 
         breakdowns of body measurements and composition metrics to help users track their fitness journey.
       `,
