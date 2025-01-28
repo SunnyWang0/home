@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Sunny",
   middleName: "",
   lastName: "Wang",
-  message: "| ML/AI Engineer | UnleashAI Founder | Gym Rat | Musician |",
+  message: "ML/AI Engineer | UnleashAI Founder | Gym Rat | Musician",
   icons: [
     {
       image: "fa-github",
