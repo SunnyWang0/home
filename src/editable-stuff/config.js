@@ -139,7 +139,10 @@ const repos = {
     },
     {
       name: "Tesla FAQ Chatbot",
-      description: "An NLP-driven chatbot tailored for answering FAQ's related to Tesla, mapping user queries to an FAQ database.",
+      description: `
+        An NLP-driven chatbot tailored for answering FAQ's related to Tesla, mapping user queries to an FAQ database.
+        Contains an NER system to extract relevant information from user queries and pull the most relevant answers.
+      `,
       svn_url: "https://github.com/SunnyWang0/FAQ-Chatbot",
     }
   ]
