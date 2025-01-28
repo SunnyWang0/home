@@ -132,7 +132,7 @@ code {
 }
 
 .project-carousel {
-  padding: 0 40px;
+  padding: 0 60px;
   max-width: 1400px;
   margin: 0 auto;
   
@@ -146,10 +146,19 @@ code {
     height: 40px;
     top: 50%;
     transform: translateY(-50%);
+    position: absolute;
     
     &:hover {
       opacity: 1;
     }
+  }
+
+  .carousel-control-prev {
+    left: 10px;
+  }
+
+  .carousel-control-next {
+    right: 10px;
   }
 
   .carousel-indicators {
@@ -165,6 +174,8 @@ code {
     margin: 0;
     justify-content: center;
     width: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .col-md-6 {
@@ -172,6 +183,7 @@ code {
     display: flex;
     max-width: 600px;
     min-width: 500px;
+    justify-content: center;
     
     .card {
       width: 100%;
