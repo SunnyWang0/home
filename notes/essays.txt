@@ -2,3 +2,4 @@ huggingface:
 
 Hugging Face is at the forefront of AI development, and I resonate deeply with your mission of advancing open AI research and making the best models accessible to all. Through client projects at UnleashAI and countless side projects, I have consistently relied on Hugging Face’s models and tools to build impactful AI solutions.
 
+At Viasat, I developed an AI-powered executive summary generator, bringing AI automation to backend tooling. My work in AI automation consulting has also equipped me with the ability to translate complex problems into impactful, user-friendly AI-powered applications. With expertise in Python, PyTorch, and cloud infrastructure, I am eager to contribute to Hugging Face's dynamic team and inspiring mission.
