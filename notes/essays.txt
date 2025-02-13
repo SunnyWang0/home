@@ -5,3 +5,5 @@ Hugging Face is at the forefront of AI development, and I resonate deeply with y
 As a person, I am curious, hardworking, and driven by a passion for building AI systems that create real-world impact. I thrive in collaborative environments, enjoy tackling complex challenges, and have a strong track record of designing and deploying scalable AI solutions. I am always seeking ways to push the boundaries of what AI can achieve.
 
 At Viasat, I developed an AI-powered executive summary generator, bringing AI automation to backend tooling. My work in AI automation consulting has also equipped me with the ability to translate complex problems into impactful, user-friendly AI-powered applications. With expertise in Python, PyTorch, and cloud infrastructure, I am eager to contribute to Hugging Face's dynamic team and inspiring mission.
+
+Scale AI:
