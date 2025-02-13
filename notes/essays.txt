@@ -6,7 +6,7 @@ As a person, I am curious, hardworking, and driven by a passion for building AI 
 
 At Viasat, I developed an AI-powered executive summary generator, bringing AI automation to backend tooling. My work in AI automation consulting has also equipped me with the ability to translate complex problems into impactful, user-friendly AI-powered applications. With expertise in Python, PyTorch, and cloud infrastructure, I am eager to contribute to Hugging Face's dynamic team and inspiring mission.
 
-Most interesting proj
+Most interesting proje
 
 One of the most interesting LLM-related projects I’ve worked on is an NLP-to-SQL chatbot I built for a client at UnleashAI.  The goal was to empower non-technical users to query structured databases using natural language, eliminating the need for them to write SQL.  This was particularly rewarding because it directly addressed a real pain point for the client, making their data much more accessible.
 
