@@ -68,7 +68,7 @@ const CardButtons = ({ svn_url, homepage, paper_url }) => {
   if (homepage !== undefined && homepage !== null) {
     buttons.push(
       <a key="homepage" href={homepage} target="_blank" rel="noopener noreferrer" className="btn btn-outline-secondary mx-2">
-        <i className="fas fa-play-circle" /> Try Me Out!
+        <i className="fas fa-globe" /> Website
       </a>
     );
   }
