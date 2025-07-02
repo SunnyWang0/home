@@ -20,16 +20,16 @@ const MainBody = React.forwardRef(
           <h1 ref={ref} className="display-1">
             {title}
           </h1>
-          <Typist>
-            <div className="lead typist">
-              {message}
-            </div>
-          </Typist>
+          <div className="lead">
+            {message}
+          </div>
           {currentlyBuilding && (
             <div className="mt-2">
-              <p className="lead text-light-50" style={{ fontSize: '1.1rem', opacity: 0.9 }}>
-                <strong>Currently Building:</strong> {currentlyBuilding}
-              </p>
+              <Typist>
+                <p className="lead text-light-50" style={{ fontSize: '1.1rem', opacity: 0.9 }}>
+                  <strong>Currently Building:</strong> {currentlyBuilding}
+                </p>
+              </Typist>
             </div>
           )}
           <div className="p-2 pb-4">
