@@ -40,7 +40,7 @@ const about = {
   imageLink: require("../editable-stuff/portrait.png"),
   imageSize: 375,
   message: `
-    My name is Sunny Wang, and I'm a recent graduate from the University of Michigan with a dual 
+    I got my undergrad from University of Michigan with a dual 
     degree in computer science and music. I'm hardworking, creative, and resilient, viewing every 
     challenge as an opportunity to learn and improve. 
 
