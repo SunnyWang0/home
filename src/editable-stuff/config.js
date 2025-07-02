@@ -65,6 +65,14 @@ const repos = {
   specificRepos: [],
   customProjects: [
     {
+      name: "EloWard: Rank Badges for Twitch",
+      description: `
+        A rank display platform for Twitch streamers that shows authentic viewer rank badges in chat. It allows everyone in the stream to see the rank of the viewers in chat. There is also an OBS integration that allows streamers easily see the ranks within their native streaming software. <br/>
+        <a href="https://www.eloward.com/" target="_blank" rel="noopener noreferrer">Learn more</a>
+      `,
+      svn_url: "https://github.com/SunnyWang0/EloWard"
+    },
+    {
       name: "SnapFit: AI Body Fat Analyzer",
       description: `
         An AI-powered body fat analysis tool that provides accurate body fat percentage estimates from photos.
