@@ -10,6 +10,7 @@ const mainBody = {
   middleName: "",
   lastName: "Wang",
   message: "ML/AI Engineer | Founder | Gym Rat | Musician",
+  currentlyBuilding: "Cursor for Music Production 🎵",
   icons: [
     {
       image: "fa-github",

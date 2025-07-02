@@ -4,7 +4,7 @@ import Typist from 'react-typist-component';
 import { Jumbotron } from "./migration";
 
 const MainBody = React.forwardRef(
-  ({ gradient, title, message, icons }, ref) => {
+  ({ gradient, title, message, currentlyBuilding, icons }, ref) => {
     return (
       <Jumbotron
         fluid
@@ -25,6 +25,13 @@ const MainBody = React.forwardRef(
               {message}
             </div>
           </Typist>
+          {currentlyBuilding && (
+            <div className="mt-4 mb-3">
+              <p className="lead text-light-50" style={{ fontSize: '1.1rem', opacity: 0.9 }}>
+                {currentlyBuilding}
+              </p>
+            </div>
+          )}
           <div className="p-5">
             {icons.map((icon, index) => (
               <a
