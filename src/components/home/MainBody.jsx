@@ -28,7 +28,7 @@ const MainBody = React.forwardRef(
           {currentlyBuilding && (
             <div className="mt-4 mb-3">
               <p className="lead text-light-50" style={{ fontSize: '1.1rem', opacity: 0.9 }}>
-                {currentlyBuilding}
+                <strong>Currently Building:</strong> {currentlyBuilding}
               </p>
             </div>
           )}
