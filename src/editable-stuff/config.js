@@ -50,7 +50,7 @@ const about = {
     
     <br /><br />
     
-    I'm currently based in San Francisco, and always building and learning new things.
+    I'm currently based in San Francisco, and always building.
     
     <br /><br />
   `,

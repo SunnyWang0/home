@@ -26,13 +26,13 @@ const MainBody = React.forwardRef(
             </div>
           </Typist>
           {currentlyBuilding && (
-            <div className="mt-4 mb-3">
+            <div className="mt-2">
               <p className="lead text-light-50" style={{ fontSize: '1.1rem', opacity: 0.9 }}>
                 <strong>Currently Building:</strong> {currentlyBuilding}
               </p>
             </div>
           )}
-          <div className="p-5">
+          <div className="p-2 pb-4">
             {icons.map((icon, index) => (
               <a
                 key={`social-icon-${index}`}
