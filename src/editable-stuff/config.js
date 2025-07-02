@@ -40,19 +40,17 @@ const about = {
   imageLink: require("../editable-stuff/portrait.png"),
   imageSize: 375,
   message: `
-    I got my undergrad from University of Michigan with a dual degree in computer science and music. I'm hardworking, creative, and resilient, viewing every challenge as an opportunity to learn and improve. 
+    Originally from Toronto, I got my undergrad from University of Michigan with a dual degree in computer science and music. I'm hardworking, creative, and resilient, viewing every challenge as an opportunity to learn and improve. 
 
     <br /><br />
     
     I founded <a href="https://unleashaiconsulting.com/" target="_blank" rel="noopener noreferrer">UnleashAI</a>, an AI automation consulting agency focused on helping growing businesses leverage AI to 
-    eliminiate tedious manual tasks and improve efficiency. I also enjoy tinkering with side projects in the intersection 
-    of AI and fitness to create meaningful solutions.
+    eliminiate tedious manual tasks and improve efficiency. 
     
     <br /><br />
     
-    With a commitment to continuous growth, my goal is to gain hands-on experience and learn 
-    from industry leaders who are driving innovation. I'm eager to hone my skills, contribute 
-    to meaningful projects, and play a part in shaping the future of AI-driven technologies.
+    I'm currently based in San Francisco, and always building and learning new things.
+    
     <br /><br />
   `,
   resume: require("../editable-stuff/resume.pdf"),
